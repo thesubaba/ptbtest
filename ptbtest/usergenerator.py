@@ -66,5 +66,6 @@ class UserGenerator(PtbGenerator):
         return User(
             id or self.gen_id(),
             first_name,
+            is_bot=False,
             last_name=last_name,
             username=username)
